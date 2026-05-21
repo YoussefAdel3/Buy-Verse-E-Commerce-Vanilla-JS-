@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="shortcut icon" href="../image-removebg-preview.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+        </div>
+        <div class="header__buttom">
+            <span class="open_menu"><i class="fa-solid fa-bars"></i></span>
+            <a class="logo" href="index.html">
+                <!-- <img src="../Buyverse Global Tech Logo without bg.png" alt="" srcset=""> -->
+                <span>Buy Verse</span>
+            </a>
+            
+        <ul class="nav">
+            <span class="close_menu"><span>Buy Verse</span><i class="fa-solid fa-circle-xmark"></i></span>
+            <li><a class="nav__link " href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button id="drop" class="dropbtn"><span>Shop</span> <i class="fa-solid fa-chevron-down" style="color: rgb(30, 48, 80);"></i></button>
+                    <div class="dropdown-content">
+                        <!-- <a href="allproducts.html">Hot Deals</a> -->
+                        <a href="allproducts.html?category=electronics">Electronics</a>
+                        <a href="allproducts.html?category=appliances">Appliances</a>
+                        <a href="allproducts.html?category=mobiles">Mobiles</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="nav__link" href="#">About</a></li>
+            <li><a class="nav__link" href="#">Blog</a></li>
+            <li><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+        
+        
+        <form class="header__search">
+            <button><i class="fa-solid fa-magnifying-glass" ></i></button>
+            <input type="text" id="search" placeholder="Search for product..." >
+        </form>
+
+        <ul class="header__icons">
+            <li><a class="open_cart" href="#"><i class="fa-solid fa-cart-shopping"></i> <span class="items_header">0</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+        </div>
+        
+
+
+
+    </header>
+    
+    <nav class="breadcrumb">
+        <ul>
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li>Shop</li>
+        </ul>
+    </nav>
+
+    <section class="cart">
+        <section class="cart__top">
+            <h3>Cart items: <span class="items_number">3</span></h3>
+            <span class="close_cart"><i class="fa-solid fa-circle-xmark"></i></span>
+        </section>
+
+
+        <section class="items">
+            
+        </section>
+        <section class="cart__buttom">
+            <section class="total">
+                <p>Subtotal</p>
+                <p class="total_price">0 $</p>
+            </section>
+            <section class="buttons">
+                <a class="btn_cart" href="#">Checkout</a>
+                <span class="btn_cart trans">Shop more</span>
+            </section>
+        </section>
+        
+    </section>
+
+
+    <main>
+        <section class="filter ">
+            <section class="filter__container">
+                <section class="filter__header">
+                    <h3>Filters</h3>
+                    <span id="close_filter"><i class="fa-solid fa-circle-xmark"></i></span>
+                </section>
+                <section class="filter__category">
+                    <section class="wrapper">
+                        <h2>Type</h2>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </section>
+                     <ul class="category">
+                    <!-- <li data-category="hot deals">Hot deals</li> -->
+                    <li data-category="electronics">Electronics</li>
+                    <li data-category="mobiles">Mobiles</li>
+                    <li data-category="appliances">Appliances</li>
+                </ul>
+                </section>
+               
+
+                <section class="filter__price">
+                    <section class="wrapper">
+                        <h3>Price</h3>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </section>
+                    <section class="range">
+                        <input type="range" name="price" id="price_range" min="0" max="1000" value="500">
+                        <section class="values">
+                            <span class="min">$500</span>
+                            <span class="max">$1000</span>
+                        </section>
+                        
+
+                    </section>
+                </section>
+
+                <section class="filter__color">
+                    <section class="wrapper">
+                        <h3>Colors</h3>
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </section>
+                    <section class="colors">
+                        <div class="color red " data-color="red"></div>
+                        <div class="color black" data-color="black"></div>
+                        <div class="color silver" data-color="silver"></div>
+                        <div class="color blue" data-color="blue"></div>
+                    </section>
+                    
+                </section>
+
+                <section class="apply__btn">
+                    <button id="apply_btn">Apply</button>
+                </section>
+            </section>
+        </section>
+
+        <section class="products">
+            <section class="products__header">
+                <h2 id="filterd_cat">ALL</h2>
+                <span class="icon"><i class="fa-solid fa-sliders"></i></span>
+
+            </section>
+            <section class="products__grid">
+                        
+                        
+            </section>
+            <section class="pagination">
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <section class="footer__container">
+            <section class="upper">
+                <section class="info">
+                    <section class="logo">
+                        <h2>Buy Verse</h2>
+                    </section>
+                    <section class="desc">Shop the latest tech and top-tier brands with confidence. At Buy Verse, we prioritize your satisfaction and device longevity.</section>
+                    <section class="icons">
+                        <a href="#"><i class="fa-solid fa-phone"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </section>
+                </section>
+
+                <section class="find">
+                    <span class="title">Find it</span>
+                    <section class="links">
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Smart phones & tablets </a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> tv & audio </a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> appliances </a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> jewellry & Watches </a>
+                    </section>
+                    
+                    
+                </section>
+                <section class="quick">
+                    <span class="title">Quick Links</span>
+                    <section class="links">
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i>  Returns & Exchanges </a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i>  Estimated Delivery Time</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i>  Purchase Hisotry </a>
+                    </section>
+                    
+                </section>
+                <section class="help">
+                    <span class="title">Help</span>
+                    <section class="links">
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                    </section>
+                                   
+                </section>
+            </section>
+
+
+
+            <section class="lower">
+                <section class="wrapper">
+                    <section class="rights">
+                        <p>Buy Verse<span> &copy;</span> Made By <span class="name">Youssef Adel</span></p>
+                    </section>
+                    <section class="pay">
+                        <img src="../img/payment_method.png" alt="">
+                    </section>
+                </section>
+                
+            </section>
+        </section>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/test.js" ></script>
+    
+</body>
+</html>
